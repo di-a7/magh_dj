@@ -1,0 +1,17 @@
+# Django - Python based framework, fullstack development(frontend[it can be seen by user]-backend[it cant be seen by user])
+- MVT structure:
+	Model(work related to database,table,data)
+	View(business logic, render template, acts as a bridge between model and templates)
+	Templates(frontend designs, html,cass)
+
+- Development:
+1. Database design
+2. Development
+3. Testing
+4. Deploy
+
+-Database design:
+Todo:
+	title           (char)
+	description	    (char)
+	is_completed	(boolean)
