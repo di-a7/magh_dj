@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>{{title}}</h1>
+   <h2>this is index file in the templates folder</h2>
+   <table border="1">
+      <tr>
+         <th>id</th>
+         <th>Name</th>
+         <th>Age</th>
+      </tr>
+
+      {% for person in persons %}
+      <tr>
+         <td>{{forloop.counter}}</td>
+         <td>{{person.name}}</td>
+         <td>
+            {% if person.age < 18 %}
+            Baccha
+            {% elif person.age < 50 %}
+            Ali Budo
+            {% else %}
+            OLD
+            {% endif %}
+            {{person.age}}</td>
+      </tr>
+      {% endfor %}
+
+      </tr>
+   </table>
+</body>
+</html>
