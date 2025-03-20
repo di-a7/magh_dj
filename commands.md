@@ -49,7 +49,7 @@ Model_name.objects.all()
 Model_name.objects.all().values()
 
 <!-- get single data -->
-a = Model_name.objects.get( id=1 )
+a = Model_name.objects.get(id=)
 
 <!-- get the value of single data -->
 a.field_name
