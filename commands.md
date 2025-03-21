@@ -37,6 +37,9 @@ python manage.py makemigrations
 <!-- migrate change to database -->
 python manage.py migrate
 
+<!-- create superuser -->
+python manage.py createsuperuser
+
 <!-- open python shell -->
 python manage.py shell
 <!-- close shell -->

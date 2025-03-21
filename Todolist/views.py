@@ -62,7 +62,7 @@ def edit(request,pk):
    context = {
       "task":task
    }
-   if request.method == "POST":
+   if request.method == "PUT":
       titles = request.POST.get('title')
       descriptions = request.POST.get('description')
       task.title = titles
@@ -70,3 +70,9 @@ def edit(request,pk):
       task.save()
       return redirect('/todolist/')
    return render(request,'edit.html',context)
+
+# PUT
+# {'title':"new data",
+#  'description':"previoue data"}
+# # PATCH
+# {'title':'new data'}
