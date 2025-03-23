@@ -71,6 +71,10 @@ def edit(request,pk):
       return redirect('/todolist/')
    return render(request,'edit.html',context)
 
+def delete(request, pk):
+   task = Todo.objects.get(pk = pk)
+   task.delete()
+   return redirect('/todolist/')
 # PUT
 # {'title':"new data",
 #  'description':"previoue data"}

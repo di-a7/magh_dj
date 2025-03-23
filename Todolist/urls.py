@@ -6,5 +6,6 @@ urlpatterns = [
    path('todolist/',todo),
    path('create/',create),
    path('todolist/<pk>/',mark),
-   path('todolist/<pk>/edit/',edit)
+   path('todolist/<pk>/edit/',edit),
+   path('todolist/<pk>/delete/',delete)
 ]
